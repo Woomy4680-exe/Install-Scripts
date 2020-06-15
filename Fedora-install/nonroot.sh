@@ -10,7 +10,7 @@ cargo_to_path() {
 }
 main() {
     cargo_to_path
-    install_nushell
+   # install_nushell
     install_rustup
 }
 main
