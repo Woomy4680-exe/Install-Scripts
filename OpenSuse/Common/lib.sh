@@ -33,4 +33,5 @@ install_dots() {
     cd Dotfiles
     ~/.cargo/bin/kelpdot install 
     # If kelp isn't in the path, use its path directly
+    nvim -c "PlugInstall | q | q"
 }
