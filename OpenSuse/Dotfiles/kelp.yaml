@@ -3,10 +3,6 @@ name: Dotfiles
 homedir:
   - name: ZSH Config
     path: ".zshrc"
-    onlyon: ~
-    backuponly: ~
   - name: Neovim config
     path: ".config/nvim"
-    onlyon: ~
-    backuponly: ~
 rootfiles: []
