@@ -14,7 +14,10 @@ source "${ROOT}/../../Config/Common.env" # Load default configs
 source "${ROOT}/../../Config/Opensuse.env"  # Load Opensuse's specific configs 
 # NOTE: Opensuse.env overwrites Common.env variables
 prepare_opensuse # Upgrade opensuse before
-sudo zypper install -y "${PACKAGES}"
+for PACK in "${PACKAGES[*]}"
+do
+    zypper install -y $PACK
+done
 install_cargo_packages # Install cargo, kelpdot and tab
 install_omz
 install_dots
