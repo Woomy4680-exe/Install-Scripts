@@ -20,4 +20,4 @@ do
 done
 install_cargo_packages # Install cargo, kelpdot and tab
 install_omz
-install_dots
+install_dots "${ROOT}/.."

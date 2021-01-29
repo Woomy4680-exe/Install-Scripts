@@ -24,6 +24,10 @@ install_cargo_packages() {
     install_starship
 }
 install_omz() {
+    if [[ -d "${HOME}/.oh-my-zsh" ]]
+    then
+        rm -rf "${HOME}/.oh-my-zsh"
+    fi
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
 # Install dotfiles using KelpDot
