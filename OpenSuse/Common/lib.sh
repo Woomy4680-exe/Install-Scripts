@@ -26,3 +26,11 @@ install_cargo_packages() {
 install_omz() {
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
+# Install dotfiles using KelpDot
+install_dots() {
+    ROOT=$1
+    cd $ROOT
+    cd Dotfiles
+    ~/.cargo/bin/kelpdot install 
+    # If kelp isn't in the path, use its path directly
+}
