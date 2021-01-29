@@ -6,7 +6,7 @@ prepare_opensuse() {
     prepare_opensuse_repos
 }
 install_cargo() {
-    sudo zypper install cargo -y
+    sudo zypper install -y cargo
 }
 install_kelpdot() {
     cargo install kelpdot # Install Kelpdot to manage dotfiles
