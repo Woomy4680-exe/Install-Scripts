@@ -14,8 +14,15 @@ install_kelpdot() {
 install_tab() {
     cargo install tab # Install "tab", an easy to use terminal multiplexer
 }
+install_starship() {
+    cargo install starship # Cross-shell prompt
+}
 install_cargo_packages() {
     install_cargo
     install_kelpdot
     install_tab
+    install_starship
+}
+install_omz() {
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }

@@ -16,3 +16,4 @@ source "${ROOT}/../../Config/Opensuse.env"  # Load Opensuse's specific configs
 prepare_opensuse # Upgrade opensuse before
 install_cargo_packages # Install cargo, kelpdot and tab
 sudo zypper install "${PACKAGES}" -y
+install_omz
