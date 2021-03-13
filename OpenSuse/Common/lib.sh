@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+set -e
 prepare_opensuse_repos() {
     # Zypper update refreshes repo, do not need to `zypper refresh`
     sudo zypper update -y
@@ -33,9 +35,9 @@ install_omz() {
 # Install dotfiles using KelpDot
 install_dots() {
     ROOT=$1
-    cd $ROOT
+    cd "${ROOT}"
     cd Dotfiles
     ~/.cargo/bin/kelpdot install 
     # If kelp isn't in the path, use its path directly
-    nvim -c "PlugInstall | q | q"
+    #nvim -c "PlugInstall | q | q"
 }
