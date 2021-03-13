@@ -3,6 +3,4 @@ name: Dotfiles
 homedir:
   - name: ZSH Config
     path: ".zshrc"
-  - name: Neovim config
-    path: ".config/nvim"
 rootfiles: []
